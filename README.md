@@ -58,7 +58,9 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-Теперь ваше приложение доступно по адресу http://localhost:8000/.
+Теперь серверная часть приложения доступна по адресу http://localhost:8000/
+А клиентская часть по адресу http://localhost:4200/
+
 
 ### Процесс проектирования и разработки
 
