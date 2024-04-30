@@ -22,7 +22,7 @@ git clone https://github.com/abdusss111/2nd-stage-nFactorial.git
 2. **Установите зависимости для фронтенда (AngularJS) и запустите сервер**:
 
 ```bash
-cd frontend
+cd front
 npm install
 ng serve
 ```
@@ -31,7 +31,7 @@ ng serve
 3. **Установите зависимости для бэкенда (Django)**:
 
 ```bash
-cd ../backend
+cd ../back
 pip install -r requirements.txt
 python manage.py migrate 
 ```
