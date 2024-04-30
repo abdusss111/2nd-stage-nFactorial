@@ -31,7 +31,7 @@ ng serve
 3. **Установите зависимости для бэкенда (Django)**:
 
 ```bash
-cd demo
+cd back/demo
 pip install -r requirements.txt
 python manage.py migrate 
 ```
