@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.event-card {
+  width: 60%;
+  display: flex;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  border: solid  rgb(60, 134, 213) 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  left: 30px;
+  position: relative;
+  height: 200px;
+}
+
+.event-card img {
+  width: 30%;
+  max-width: 200px;
+  border-radius: 10px;
+}
+
+.event-details {
+  padding: 20px;
+  flex: 1;
+}
+
+.event-details a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 70%;
+}
+
+.event-details h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.event-details h4 {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+form {
+  display: block;
+  position: relative;
+  bottom: 350px;
+  left: 450px;
+  align-content: flex-end;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="time"],
+form input[type="number"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+form textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+form input[type="submit"] {
+  background-color: #3367D6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #0045a2;
+}
+form button[type="submit"] {
+  background-color: #3367D6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+  background-color: #0045a2;
+}
+
+

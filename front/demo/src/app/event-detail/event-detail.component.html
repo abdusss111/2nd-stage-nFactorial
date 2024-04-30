@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="event-details">
+    <h2>#{{event.id}} - {{event.title}}</h2>
+    <img src="{{event.imageUrl}}" alt="Preview"><br>
+    <p>{{event.description}}</p>
+    <h3>Дата: {{event.date}}<br> Время: {{event.time}}<br> Локация: {{event.location}}</h3>
+    <h3>Доступные места: {{event.places}}</h3>
+  </div>
+  <div class="buttons">
+    <button *ngIf="localStorage.getItem('logged')" (click)="register()">Забронировать место</button>
+    <h5 *ngIf="!localStorage.getItem('logged')"><a [routerLink]="['/auth']">Авторизуйтесь</a>, для того чтобы забронировать место</h5>
+    <button *ngIf="localStorage.getItem('logged')" (click)="createGoogleCalendarEvent()">Добавить мероприятие в Google Calendar</button>
+    <h6 *ngIf="localStorage.getItem('logged')">Для автоматического добавления мероприятий авторизуйтесь через Google на <a [routerLink]="['/profile']">этой странице</a>  </h6>
+  </div>
+</div>

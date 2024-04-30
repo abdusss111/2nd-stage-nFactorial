@@ -1,0 +1,30 @@
+<ng-container *ngIf="!Boolean(localStorage.getItem('logged'))">
+  <form class="login-form" (ngSubmit)="signIn()">
+    <h4>Вы можете войти используя уже имеющийся аккаунт</h4> <br>
+    <input name="username" type="text" [(ngModel)]="username" placeholder="Username"><br>
+    <input name="password" type="password" [(ngModel)]="password" placeholder="Password"><br>
+    <button type="submit">Войти</button>
+  </form>
+  <br>
+  <form class="registration-form" (ngSubmit)="signUp()">
+    <h4> Или создайте аккаунт если еще не зарегистрированы</h4><br>
+    <input name="email" type="email" [(ngModel)]="email" placeholder="Email"><br>
+    <input name="username" type="text" [(ngModel)]="reg_username" placeholder="Username"><br>
+    <input name="password" type="password" [(ngModel)]="reg_password" placeholder="Password"><br>
+    <button type="submit">Зарегистрироваться</button>
+  </form>
+</ng-container>
+
+<ng-container *ngIf="Boolean(localStorage.getItem('logged'))">
+  <div class="authenticated-form">
+    <h2>Теперь вы можете использовать <br> все функции приложения!</h2><br><br>
+    <h3>Бронируйте места на желаемые мероприятия</h3><br><br>
+    <h3>Для авторизации используя Google перейдите на страницу "Мой профиль"</h3>
+    <button (click)="logout()" id="exit">
+      Выйти
+    </button>
+  </div>
+</ng-container>
+
+
+

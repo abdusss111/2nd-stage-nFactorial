@@ -1,0 +1,27 @@
+<div *ngFor="let event of events" class="event-card">
+  <img [src]="event.imageUrl" alt="Preview">
+  <div class="event-details">
+    <a [routerLink]="['/events', event.id]">
+      <h2>#{{event.id}} - {{event.title}}</h2>
+    </a>
+    <h4>Дата: {{event.date}}</h4>
+  </div>
+</div>
+<form *ngIf="localStorage.getItem('username')==='admin'" (ngSubmit)="newEvent()">
+  <h3>Создайте новый ивент</h3> <br>
+  <label for="title">Название:</label>
+  <input id="title" [(ngModel)]="newEventTitle" name="title" type="text" placeholder="Название нового ивента"><br>
+  <label for="description">Описание:</label>
+  <textarea id="description" [(ngModel)]="newEventDescription" name="description" placeholder="Описание нового ивента"></textarea><br>
+  <label for="date">Дата:</label>
+  <input id="date" [(ngModel)]="newEventDate" name="date" type="date"><br>
+  <label for="imageUrl">Ссылка на изображение:</label>
+  <input id="imageUrl" [(ngModel)]="newEventImageUrl" name="imageUrl" type="text" placeholder="Ссылка на изображение"><br>
+  <label for="places">Места:</label>
+  <input id="places" [(ngModel)]="newEventPlaces" name="places" type="number"><br>
+  <label for="time">Время:</label>
+  <input id="time" [(ngModel)]="newEventTime" name="time" type="time" placeholder="Время"><br>
+  <label for="location">Локация:</label>
+  <input id="location" [(ngModel)]="newEventLocation" name="location" type="text" placeholder="Место проведения"><br>
+  <button type="submit">Создать ивент</button>
+</form>

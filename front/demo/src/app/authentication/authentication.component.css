@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.registration-form, .authenticated-form {
+  top: 20px;
+  width: 40%;
+  min-height: 300px;
+  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.login-form {
+  width: 40%;
+  min-height: 250px;
+  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+form {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  font-weight: bold;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(60, 134, 213);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+button:hover {
+  background-color: #3367D6;
+}
+
+.registration-form {
+  margin-bottom: 30px;
+}
+
+.login-form {
+  margin-top: 30px;
+}
+
+.authenticated-form {
+  top: 280px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#exit {
+  width: 50%;
+  margin-top: 80px;
+  font-weight: bold;
+}
+
+h2, h3 {
+  text-align: center;
+}
+
